@@ -1,0 +1,1197 @@
+2022-03-22 09:50:02 [192.168.218.1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 页面未找到。 in D:\work\www\rageframe\vendor\yiisoft\yii2\web\Request.php:287
+Stack trace:
+#0 D:\work\www\rageframe\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\work\www\rageframe\web\api\index.php(33): yii\base\Application->run()
+#3 {main}
+2022-03-22 09:50:02 [192.168.218.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.218.1
+2022-03-22 09:50:02 [192.168.218.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\32479\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ADMIN'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\32479'
+    'http_proxy' => '127.0.0.1:7890'
+    'LOCALAPPDATA' => 'C:\\Users\\32479\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ADMIN'
+    'NUMBER_OF_PROCESSORS' => '20'
+    'OneDrive' => 'C:\\Users\\32479\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\32479\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\app\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\32479\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\SSH Communications Security\\SSH Secure Shell;D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts;C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;C:\\Users\\32479\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\app\\vim'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts\\php.exe'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 151 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9702'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ADMIN'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADMIN'
+    'USERNAME' => '32479'
+    'USERPROFILE' => 'C:\\Users\\32479'
+    'vim' => 'D:\\app\\vim\\gvim.exe'
+    'windir' => 'C:\\Windows'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.218.1'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.218.1'
+    'REMOTE_PORT' => '64920'
+    'REMOTE_ADDR' => '192.168.218.1'
+    'SERVER_SOFTWARE' => 'nginx/1.15.11'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/work/www/rageframe/web'
+    'DOCUMENT_URI' => '/api/index.php'
+    'REQUEST_URI' => '/api/v1/defualt'
+    'SCRIPT_NAME' => '/api/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/work/www/rageframe/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/work/www/rageframe/web/api/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1647913802.7799
+    'REQUEST_TIME' => 1647913802
+]
+2022-03-22 09:50:12 [192.168.218.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.218.1
+2022-03-22 09:50:12 [192.168.218.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\32479\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ADMIN'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\32479'
+    'http_proxy' => '127.0.0.1:7890'
+    'LOCALAPPDATA' => 'C:\\Users\\32479\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ADMIN'
+    'NUMBER_OF_PROCESSORS' => '20'
+    'OneDrive' => 'C:\\Users\\32479\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\32479\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\app\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\32479\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\SSH Communications Security\\SSH Secure Shell;D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts;C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;C:\\Users\\32479\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\app\\vim'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts\\php.exe'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 151 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9702'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ADMIN'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADMIN'
+    'USERNAME' => '32479'
+    'USERPROFILE' => 'C:\\Users\\32479'
+    'vim' => 'D:\\app\\vim\\gvim.exe'
+    'windir' => 'C:\\Windows'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.218.1'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.218.1'
+    'REMOTE_PORT' => '64920'
+    'REMOTE_ADDR' => '192.168.218.1'
+    'SERVER_SOFTWARE' => 'nginx/1.15.11'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/work/www/rageframe/web'
+    'DOCUMENT_URI' => '/api/index.php'
+    'REQUEST_URI' => '/api/v1/default'
+    'SCRIPT_NAME' => '/api/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/work/www/rageframe/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/work/www/rageframe/web/api/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1647913812.8266
+    'REQUEST_TIME' => 1647913812
+]
+2022-03-22 14:24:52 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: file_get_contents(http://hy.mix2.zthysms.com/sendSms.do/v2sms.aspx?action=send&amp;userid=116&amp;timestamp=1647930292&amp;sign=726a39b7acb236a7bf3490676641f155&amp;mobile=13570125170&amp;content=【稻兴中和】验证码是:184458，2分钟内有效。工作人员不会向您索要，如非本人操作请忽略。&amp;sendTime=&amp;extno=): failed to open stream: HTTP request failed! HTTP/1.1 400 
+ in D:\work\www\rageframe\api\modules\v1\controllers\SiteController.php:185
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_get_conten...', 'D:\\work\\www\\rag...', 185, Array)
+#1 D:\work\www\rageframe\api\modules\v1\controllers\SiteController.php(185): file_get_contents('http://hy.mix2....')
+#2 D:\work\www\rageframe\api\modules\v1\controllers\SiteController.php(124): api\modules\v1\controllers\SiteController->sendMobileMessageB('13570125170', 2130706433, 'register')
+#3 [internal function]: api\modules\v1\controllers\SiteController->actionSmsCode()
+#4 D:\work\www\rageframe\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Controller.php(180): yii\base\InlineAction->runWithParams(Array)
+#6 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('sms-code', Array)
+#7 D:\work\www\rageframe\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/site/sms-cod...', Array)
+#8 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\work\www\rageframe\web\api\index.php(33): yii\base\Application->run()
+#10 {main}
+2022-03-22 14:24:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'mobile' => '13570125170'
+    'usage' => 'register'
+]
+
+$_POST = [
+    'mobile' => '13570125170'
+    'usage' => 'register'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\32479\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ADMIN'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\32479'
+    'http_proxy' => '127.0.0.1:7890'
+    'LOCALAPPDATA' => 'C:\\Users\\32479\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ADMIN'
+    'NUMBER_OF_PROCESSORS' => '20'
+    'OneDrive' => 'C:\\Users\\32479\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\32479\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\app\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\32479\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\SSH Communications Security\\SSH Secure Shell;D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts;C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;C:\\Users\\32479\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\app\\vim'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts\\php.exe'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 151 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9702'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ADMIN'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADMIN'
+    'USERNAME' => '32479'
+    'USERPROFILE' => 'C:\\Users\\32479'
+    'vim' => 'D:\\app\\vim\\gvim.exe'
+    'windir' => 'C:\\Windows'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'HTTP_CONTENT_LENGTH' => '33'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_POSTMAN_TOKEN' => '9f87a381-7c41-49b6-8931-d5ef6e4d7e56'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.0'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58795'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.15.11'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/work/www/rageframe/web'
+    'DOCUMENT_URI' => '/api/index.php'
+    'REQUEST_URI' => '/api/v1/site/sms-code?mobile=13570125170&usage=register'
+    'SCRIPT_NAME' => '/api/index.php'
+    'CONTENT_LENGTH' => '33'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'mobile=13570125170&usage=register'
+    'PATH_TRANSLATED' => 'D:/work/www/rageframe/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/work/www/rageframe/web/api/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1647930292.0299
+    'REQUEST_TIME' => 1647930292
+]
+2022-03-22 14:25:42 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: file_get_contents(http://hy.mix2.zthysms.com/sendSms.do/v2sms.aspx?action=send&amp;userid=116&amp;timestamp=1647930341&amp;sign=0446e0070d03da631e155fa54d1e7feb&amp;mobile=13570125170&amp;content=【稻兴中和】验证码是:217019，2分钟内有效。工作人员不会向您索要，如非本人操作请忽略。&amp;sendTime=&amp;extno=): failed to open stream: HTTP request failed! HTTP/1.1 400 
+ in D:\work\www\rageframe\api\modules\v1\controllers\SiteController.php:185
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_get_conten...', 'D:\\work\\www\\rag...', 185, Array)
+#1 D:\work\www\rageframe\api\modules\v1\controllers\SiteController.php(185): file_get_contents('http://hy.mix2....')
+#2 D:\work\www\rageframe\api\modules\v1\controllers\SiteController.php(124): api\modules\v1\controllers\SiteController->sendMobileMessageB('13570125170', 2130706433, 'register')
+#3 [internal function]: api\modules\v1\controllers\SiteController->actionSmsCode()
+#4 D:\work\www\rageframe\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Controller.php(180): yii\base\InlineAction->runWithParams(Array)
+#6 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('sms-code', Array)
+#7 D:\work\www\rageframe\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/site/sms-cod...', Array)
+#8 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\work\www\rageframe\web\api\index.php(33): yii\base\Application->run()
+#10 {main}
+2022-03-22 14:25:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'mobile' => '13570125170'
+    'usage' => 'register'
+]
+
+$_POST = [
+    'mobile' => '13570125170'
+    'usage' => 'register'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\32479\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ADMIN'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\32479'
+    'http_proxy' => '127.0.0.1:7890'
+    'LOCALAPPDATA' => 'C:\\Users\\32479\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ADMIN'
+    'NUMBER_OF_PROCESSORS' => '20'
+    'OneDrive' => 'C:\\Users\\32479\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\32479\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\app\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\32479\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\SSH Communications Security\\SSH Secure Shell;D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts;C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;C:\\Users\\32479\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\app\\vim'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts\\php.exe'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 151 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9702'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ADMIN'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADMIN'
+    'USERNAME' => '32479'
+    'USERPROFILE' => 'C:\\Users\\32479'
+    'vim' => 'D:\\app\\vim\\gvim.exe'
+    'windir' => 'C:\\Windows'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'HTTP_CONTENT_LENGTH' => '33'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_POSTMAN_TOKEN' => '5c01a315-6577-4caa-96df-52609a71f4c1'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.0'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58795'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.15.11'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/work/www/rageframe/web'
+    'DOCUMENT_URI' => '/api/index.php'
+    'REQUEST_URI' => '/api/v1/site/sms-code?mobile=13570125170&usage=register'
+    'SCRIPT_NAME' => '/api/index.php'
+    'CONTENT_LENGTH' => '33'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'mobile=13570125170&usage=register'
+    'PATH_TRANSLATED' => 'D:/work/www/rageframe/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/work/www/rageframe/web/api/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1647930341.9301
+    'REQUEST_TIME' => 1647930341
+]
+2022-03-22 14:28:16 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: file_get_contents(http://hy.mix2.zthysms.com/sendSms.do/v2sms.aspx?action=send&amp;userid=116&amp;timestamp=1647930495&amp;sign=f613ef519feb657642904e7940179bfa&amp;mobile=13570125170&amp;content=【稻兴中和】验证码是:100989，2分钟内有效。工作人员不会向您索要，如非本人操作请忽略。&amp;sendTime=&amp;extno=): failed to open stream: HTTP request failed! HTTP/1.1 400 
+ in D:\work\www\rageframe\api\modules\v1\controllers\SiteController.php:185
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_get_conten...', 'D:\\work\\www\\rag...', 185, Array)
+#1 D:\work\www\rageframe\api\modules\v1\controllers\SiteController.php(185): file_get_contents('http://hy.mix2....')
+#2 D:\work\www\rageframe\api\modules\v1\controllers\SiteController.php(124): api\modules\v1\controllers\SiteController->sendMobileMessageB('13570125170', 2130706433, 'register')
+#3 [internal function]: api\modules\v1\controllers\SiteController->actionSmsCode()
+#4 D:\work\www\rageframe\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Controller.php(180): yii\base\InlineAction->runWithParams(Array)
+#6 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('sms-code', Array)
+#7 D:\work\www\rageframe\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/site/sms-cod...', Array)
+#8 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\work\www\rageframe\web\api\index.php(33): yii\base\Application->run()
+#10 {main}
+2022-03-22 14:28:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'mobile' => '13570125170'
+    'usage' => 'register'
+]
+
+$_POST = [
+    'mobile' => '13570125170'
+    'usage' => 'register'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\32479\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ADMIN'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\32479'
+    'http_proxy' => '127.0.0.1:7890'
+    'LOCALAPPDATA' => 'C:\\Users\\32479\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ADMIN'
+    'NUMBER_OF_PROCESSORS' => '20'
+    'OneDrive' => 'C:\\Users\\32479\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\32479\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\app\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\32479\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\SSH Communications Security\\SSH Secure Shell;D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts;C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;C:\\Users\\32479\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\app\\vim'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts\\php.exe'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 151 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9702'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ADMIN'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADMIN'
+    'USERNAME' => '32479'
+    'USERPROFILE' => 'C:\\Users\\32479'
+    'vim' => 'D:\\app\\vim\\gvim.exe'
+    'windir' => 'C:\\Windows'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'HTTP_CONTENT_LENGTH' => '33'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_POSTMAN_TOKEN' => 'fc722ee3-7a81-4c3e-962b-681521556849'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.0'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '59270'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.15.11'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/work/www/rageframe/web'
+    'DOCUMENT_URI' => '/api/index.php'
+    'REQUEST_URI' => '/api/v1/site/sms-code?mobile=13570125170&usage=register'
+    'SCRIPT_NAME' => '/api/index.php'
+    'CONTENT_LENGTH' => '33'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'mobile=13570125170&usage=register'
+    'PATH_TRANSLATED' => 'D:/work/www/rageframe/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/work/www/rageframe/web/api/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1647930495.8952
+    'REQUEST_TIME' => 1647930495
+]
+2022-03-22 15:33:45 [127.0.0.1][-][-][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: api\modules\v1\controllers\SiteController::sendMobileMessageB() in D:\work\www\rageframe\vendor\yiisoft\yii2\base\Component.php:300
+Stack trace:
+#0 D:\work\www\rageframe\api\modules\v1\controllers\SiteController.php(124): yii\base\Component->__call('sendMobileMessa...', Array)
+#1 [internal function]: api\modules\v1\controllers\SiteController->actionSmsCode()
+#2 D:\work\www\rageframe\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Controller.php(180): yii\base\InlineAction->runWithParams(Array)
+#4 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('sms-code', Array)
+#5 D:\work\www\rageframe\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/site/sms-cod...', Array)
+#6 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\work\www\rageframe\web\api\index.php(33): yii\base\Application->run()
+#8 {main}
+2022-03-22 15:33:45 [127.0.0.1][-][-][info][application] $_GET = [
+    'mobile' => '13570125170'
+    'usage' => 'register'
+]
+
+$_POST = [
+    'mobile' => '13570125170'
+    'usage' => 'register'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\32479\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ADMIN'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\32479'
+    'http_proxy' => '127.0.0.1:7890'
+    'LOCALAPPDATA' => 'C:\\Users\\32479\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ADMIN'
+    'NUMBER_OF_PROCESSORS' => '20'
+    'OneDrive' => 'C:\\Users\\32479\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\32479\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\app\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\32479\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\SSH Communications Security\\SSH Secure Shell;D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts;C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;C:\\Users\\32479\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\app\\vim'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts\\php.exe'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 151 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9702'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ADMIN'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADMIN'
+    'USERNAME' => '32479'
+    'USERPROFILE' => 'C:\\Users\\32479'
+    'vim' => 'D:\\app\\vim\\gvim.exe'
+    'windir' => 'C:\\Windows'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'HTTP_CONTENT_LENGTH' => '33'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_POSTMAN_TOKEN' => 'f121e7a0-5f4b-4126-aff6-3b9f92e21cfb'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.0'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '53451'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.15.11'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/work/www/rageframe/web'
+    'DOCUMENT_URI' => '/api/index.php'
+    'REQUEST_URI' => '/api/v1/site/sms-code?mobile=13570125170&usage=register'
+    'SCRIPT_NAME' => '/api/index.php'
+    'CONTENT_LENGTH' => '33'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'mobile=13570125170&usage=register'
+    'PATH_TRANSLATED' => 'D:/work/www/rageframe/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/work/www/rageframe/web/api/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1647934425.5292
+    'REQUEST_TIME' => 1647934425
+]
+2022-03-22 16:47:42 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 页面未找到。 in D:\work\www\rageframe\vendor\yiisoft\yii2\web\Request.php:287
+Stack trace:
+#0 D:\work\www\rageframe\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\work\www\rageframe\web\api\index.php(33): yii\base\Application->run()
+#3 {main}
+2022-03-22 16:47:41 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'mobile' => '13570125170'
+    'usage' => 'register'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\32479\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ADMIN'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\32479'
+    'http_proxy' => '127.0.0.1:7890'
+    'LOCALAPPDATA' => 'C:\\Users\\32479\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ADMIN'
+    'NUMBER_OF_PROCESSORS' => '20'
+    'OneDrive' => 'C:\\Users\\32479\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\32479\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\app\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\32479\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\SSH Communications Security\\SSH Secure Shell;D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts;C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;C:\\Users\\32479\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\app\\vim'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts\\php.exe'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 151 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9702'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ADMIN'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADMIN'
+    'USERNAME' => '32479'
+    'USERPROFILE' => 'C:\\Users\\32479'
+    'vim' => 'D:\\app\\vim\\gvim.exe'
+    'windir' => 'C:\\Windows'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'HTTP_CONTENT_LENGTH' => '33'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_POSTMAN_TOKEN' => '1f8eeb62-d3a2-4677-adf5-82350d5d311c'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.0'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57722'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.15.11'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/work/www/rageframe/web'
+    'DOCUMENT_URI' => '/api/index.php'
+    'REQUEST_URI' => '/api/v1/site/default'
+    'SCRIPT_NAME' => '/api/index.php'
+    'CONTENT_LENGTH' => '33'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/work/www/rageframe/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/work/www/rageframe/web/api/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1647938861.9338
+    'REQUEST_TIME' => 1647938861
+]
+2022-03-22 16:47:54 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 页面未找到。 in D:\work\www\rageframe\vendor\yiisoft\yii2\web\Request.php:287
+Stack trace:
+#0 D:\work\www\rageframe\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\work\www\rageframe\web\api\index.php(33): yii\base\Application->run()
+#3 {main}
+2022-03-22 16:47:54 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'mobile' => '13570125170'
+    'usage' => 'register'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\32479\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ADMIN'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\32479'
+    'http_proxy' => '127.0.0.1:7890'
+    'LOCALAPPDATA' => 'C:\\Users\\32479\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ADMIN'
+    'NUMBER_OF_PROCESSORS' => '20'
+    'OneDrive' => 'C:\\Users\\32479\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\32479\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\app\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\32479\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\SSH Communications Security\\SSH Secure Shell;D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts;C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;C:\\Users\\32479\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\app\\vim'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts\\php.exe'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 151 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9702'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ADMIN'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADMIN'
+    'USERNAME' => '32479'
+    'USERPROFILE' => 'C:\\Users\\32479'
+    'vim' => 'D:\\app\\vim\\gvim.exe'
+    'windir' => 'C:\\Windows'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'HTTP_CONTENT_LENGTH' => '33'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_POSTMAN_TOKEN' => 'f8a3c683-4f23-42e2-a5db-1ead265b2da7'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.0'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57722'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.15.11'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/work/www/rageframe/web'
+    'DOCUMENT_URI' => '/api/index.php'
+    'REQUEST_URI' => '/api/v1/site/default'
+    'SCRIPT_NAME' => '/api/index.php'
+    'CONTENT_LENGTH' => '33'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/work/www/rageframe/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/work/www/rageframe/web/api/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1647938874.359
+    'REQUEST_TIME' => 1647938874
+]
+2022-03-22 17:03:39 [127.0.0.1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in D:\work\www\rageframe\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 D:\work\www\rageframe\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(76): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 D:\work\www\rageframe\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\base\InlineAction))
+#2 D:\work\www\rageframe\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Controller.php(299): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 D:\work\www\rageframe\vendor\yiisoft\yii2\web\Controller.php(200): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\work\www\rageframe\api\controllers\ActiveController.php(142): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Controller.php(178): api\controllers\ActiveController->beforeAction(Object(yii\base\InlineAction))
+#9 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#10 D:\work\www\rageframe\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/default/crea...', Array)
+#11 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\work\www\rageframe\web\api\index.php(33): yii\base\Application->run()
+#13 {main}
+2022-03-22 17:03:39 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'mobile' => '13570125170'
+    'usage' => 'register'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\32479\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ADMIN'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\32479'
+    'http_proxy' => '127.0.0.1:7890'
+    'LOCALAPPDATA' => 'C:\\Users\\32479\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ADMIN'
+    'NUMBER_OF_PROCESSORS' => '20'
+    'OneDrive' => 'C:\\Users\\32479\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\32479\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\app\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\32479\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\SSH Communications Security\\SSH Secure Shell;D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts;C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;C:\\Users\\32479\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\app\\vim'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts\\php.exe'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 151 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9702'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ADMIN'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADMIN'
+    'USERNAME' => '32479'
+    'USERPROFILE' => 'C:\\Users\\32479'
+    'vim' => 'D:\\app\\vim\\gvim.exe'
+    'windir' => 'C:\\Windows'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'HTTP_CONTENT_LENGTH' => '33'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_POSTMAN_TOKEN' => '47bbd9d4-dd9e-4c8a-a0a4-9f891deda041'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.0'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '65089'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.15.11'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/work/www/rageframe/web'
+    'DOCUMENT_URI' => '/api/index.php'
+    'REQUEST_URI' => '/api/v1/default'
+    'SCRIPT_NAME' => '/api/index.php'
+    'CONTENT_LENGTH' => '33'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/work/www/rageframe/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/work/www/rageframe/web/api/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1647939819.9322
+    'REQUEST_TIME' => 1647939819
+]
+2022-03-22 17:04:45 [127.0.0.1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in D:\work\www\rageframe\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 D:\work\www\rageframe\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(76): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 D:\work\www\rageframe\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\base\InlineAction))
+#2 D:\work\www\rageframe\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Controller.php(299): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 D:\work\www\rageframe\vendor\yiisoft\yii2\web\Controller.php(200): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\work\www\rageframe\api\controllers\ActiveController.php(142): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Controller.php(178): api\controllers\ActiveController->beforeAction(Object(yii\base\InlineAction))
+#9 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#10 D:\work\www\rageframe\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/default/crea...', Array)
+#11 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\work\www\rageframe\web\api\index.php(33): yii\base\Application->run()
+#13 {main}
+2022-03-22 17:04:45 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'mobile' => '13570125170'
+    'usage' => 'register'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\32479\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ADMIN'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\32479'
+    'http_proxy' => '127.0.0.1:7890'
+    'LOCALAPPDATA' => 'C:\\Users\\32479\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ADMIN'
+    'NUMBER_OF_PROCESSORS' => '20'
+    'OneDrive' => 'C:\\Users\\32479\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\32479\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\app\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\32479\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\SSH Communications Security\\SSH Secure Shell;D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts;C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;C:\\Users\\32479\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\app\\vim'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts\\php.exe'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 151 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9702'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ADMIN'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADMIN'
+    'USERNAME' => '32479'
+    'USERPROFILE' => 'C:\\Users\\32479'
+    'vim' => 'D:\\app\\vim\\gvim.exe'
+    'windir' => 'C:\\Windows'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'HTTP_CONTENT_LENGTH' => '33'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_POSTMAN_TOKEN' => '77b19c69-0c14-4e85-b4c9-eb59b6f68b9b'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.0'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '65089'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.15.11'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/work/www/rageframe/web'
+    'DOCUMENT_URI' => '/api/index.php'
+    'REQUEST_URI' => '/api/v1/default'
+    'SCRIPT_NAME' => '/api/index.php'
+    'CONTENT_LENGTH' => '33'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/work/www/rageframe/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/work/www/rageframe/web/api/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1647939885.0061
+    'REQUEST_TIME' => 1647939885
+]
+2022-03-22 17:05:41 [127.0.0.1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in D:\work\www\rageframe\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 D:\work\www\rageframe\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(76): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 D:\work\www\rageframe\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\base\InlineAction))
+#2 D:\work\www\rageframe\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Controller.php(299): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 D:\work\www\rageframe\vendor\yiisoft\yii2\web\Controller.php(200): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\work\www\rageframe\api\controllers\ActiveController.php(142): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Controller.php(178): api\controllers\ActiveController->beforeAction(Object(yii\base\InlineAction))
+#9 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#10 D:\work\www\rageframe\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/default/crea...', Array)
+#11 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\work\www\rageframe\web\api\index.php(33): yii\base\Application->run()
+#13 {main}
+2022-03-22 17:05:41 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'mobile' => '13570125170'
+    'usage' => 'register'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\32479\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ADMIN'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\32479'
+    'http_proxy' => '127.0.0.1:7890'
+    'LOCALAPPDATA' => 'C:\\Users\\32479\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ADMIN'
+    'NUMBER_OF_PROCESSORS' => '20'
+    'OneDrive' => 'C:\\Users\\32479\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\32479\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\app\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\32479\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\SSH Communications Security\\SSH Secure Shell;D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts;C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;C:\\Users\\32479\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\app\\vim'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts\\php.exe'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 151 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9702'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ADMIN'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADMIN'
+    'USERNAME' => '32479'
+    'USERPROFILE' => 'C:\\Users\\32479'
+    'vim' => 'D:\\app\\vim\\gvim.exe'
+    'windir' => 'C:\\Windows'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'HTTP_CONTENT_LENGTH' => '33'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_POSTMAN_TOKEN' => '459abdfc-6520-4d51-87ff-c7b487f6bff0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.0'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '65089'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.15.11'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/work/www/rageframe/web'
+    'DOCUMENT_URI' => '/api/index.php'
+    'REQUEST_URI' => '/api/v1/default'
+    'SCRIPT_NAME' => '/api/index.php'
+    'CONTENT_LENGTH' => '33'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/work/www/rageframe/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/work/www/rageframe/web/api/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1647939941.4788
+    'REQUEST_TIME' => 1647939941
+]
+2022-03-22 17:06:43 [127.0.0.1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in D:\work\www\rageframe\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 D:\work\www\rageframe\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(76): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 D:\work\www\rageframe\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\base\InlineAction))
+#2 D:\work\www\rageframe\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Controller.php(299): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 D:\work\www\rageframe\vendor\yiisoft\yii2\web\Controller.php(200): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\work\www\rageframe\api\controllers\ActiveController.php(142): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Controller.php(178): api\controllers\ActiveController->beforeAction(Object(yii\base\InlineAction))
+#9 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#10 D:\work\www\rageframe\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/default/crea...', Array)
+#11 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\work\www\rageframe\web\api\index.php(33): yii\base\Application->run()
+#13 {main}
+2022-03-22 17:06:43 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'mobile' => '13570125170'
+    'usage' => 'register'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\32479\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ADMIN'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\32479'
+    'http_proxy' => '127.0.0.1:7890'
+    'LOCALAPPDATA' => 'C:\\Users\\32479\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ADMIN'
+    'NUMBER_OF_PROCESSORS' => '20'
+    'OneDrive' => 'C:\\Users\\32479\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\32479\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\app\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\32479\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\SSH Communications Security\\SSH Secure Shell;D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts;C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;C:\\Users\\32479\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\app\\vim'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts\\php.exe'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 151 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9702'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ADMIN'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADMIN'
+    'USERNAME' => '32479'
+    'USERPROFILE' => 'C:\\Users\\32479'
+    'vim' => 'D:\\app\\vim\\gvim.exe'
+    'windir' => 'C:\\Windows'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'HTTP_CONTENT_LENGTH' => '33'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_POSTMAN_TOKEN' => '1958d4a3-02d3-438a-9a96-719d25f6a5f3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.0'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '65089'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.15.11'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/work/www/rageframe/web'
+    'DOCUMENT_URI' => '/api/index.php'
+    'REQUEST_URI' => '/api/v1/default'
+    'SCRIPT_NAME' => '/api/index.php'
+    'CONTENT_LENGTH' => '33'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/work/www/rageframe/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/work/www/rageframe/web/api/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1647940003.4165
+    'REQUEST_TIME' => 1647940003
+]

@@ -1,0 +1,226 @@
+2022-03-23 11:29:30 [127.0.0.1][3][9m44ijs49dk8bbbtaj11d219ej][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 对不起，您现在还没获此操作的权限 in D:\work\www\rageframe\backend\controllers\BaseController.php:68
+Stack trace:
+#0 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Controller.php(178): backend\controllers\BaseController->beforeAction(Object(yii\base\InlineAction))
+#1 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('member-recharge...', Array)
+#2 D:\work\www\rageframe\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('main/member-rec...', Array)
+#3 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\work\www\rageframe\web\backend\index.php(36): yii\base\Application->run()
+#5 {main}
+2022-03-23 11:29:30 [127.0.0.1][3][9m44ijs49dk8bbbtaj11d219ej][info][application] $_GET = [
+    'type' => 'today'
+    'echarts_type' => 'line-bar'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '03d5f49949b3e7607eef2f3b83b3b446b1abdd5276d06caa73103dd4f388fdeca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"hoSWpmT1R4f0q2Bpd0BtETpMWVAuPAl9\",2592000]\";}'
+    'advanced-backend' => '9m44ijs49dk8bbbtaj11d219ej'
+    '_csrf-backend' => '2bc05c60651150b270802d3766ae0acc2fa572f8625732898ced342a457fa065a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"frZgaPBXWwSdLZQlGshH04woHYuPJZLG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__backend' => 3
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\32479\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ADMIN'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\32479'
+    'http_proxy' => '127.0.0.1:7890'
+    'LOCALAPPDATA' => 'C:\\Users\\32479\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ADMIN'
+    'NUMBER_OF_PROCESSORS' => '20'
+    'OneDrive' => 'C:\\Users\\32479\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\32479\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\app\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\32479\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\SSH Communications Security\\SSH Secure Shell;D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts;C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;C:\\Users\\32479\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\app\\vim'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts\\php.exe'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 151 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9702'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ADMIN'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADMIN'
+    'USERNAME' => '32479'
+    'USERPROFILE' => 'C:\\Users\\32479'
+    'vim' => 'D:\\app\\vim\\gvim.exe'
+    'windir' => 'C:\\Windows'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'HTTP_COOKIE' => '_identity-backend=03d5f49949b3e7607eef2f3b83b3b446b1abdd5276d06caa73103dd4f388fdeca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22hoSWpmT1R4f0q2Bpd0BtETpMWVAuPAl9%22%2C2592000%5D%22%3B%7D; advanced-backend=9m44ijs49dk8bbbtaj11d219ej; _csrf-backend=2bc05c60651150b270802d3766ae0acc2fa572f8625732898ced342a457fa065a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22frZgaPBXWwSdLZQlGshH04woHYuPJZLG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost/backend/main/system'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_CSRF_TOKEN' => 'uqDDceUiOUTf_QYztn70ul6QAcxiMiA8NjTjpk74Rgzc0pkWhHJ7HIiKVVf6JKXWGeNphFIGV1N-bZb2BKIKSw=='
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55677'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.15.11'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/work/www/rageframe/web'
+    'DOCUMENT_URI' => '/backend/index.php'
+    'REQUEST_URI' => '/backend/main/member-recharge-stat?type=today&echarts_type=line-bar'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'type=today&echarts_type=line-bar'
+    'PATH_TRANSLATED' => 'D:/work/www/rageframe/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/work/www/rageframe/web/backend/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1648006170.0343
+    'REQUEST_TIME' => 1648006170
+]
+2022-03-23 12:44:29 [127.0.0.1][3][9m44ijs49dk8bbbtaj11d219ej][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 对不起，您现在还没获此操作的权限 in D:\work\www\rageframe\backend\controllers\BaseController.php:68
+Stack trace:
+#0 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Controller.php(178): backend\controllers\BaseController->beforeAction(Object(yii\base\InlineAction))
+#1 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('member-recharge...', Array)
+#2 D:\work\www\rageframe\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('main/member-rec...', Array)
+#3 D:\work\www\rageframe\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\work\www\rageframe\web\backend\index.php(36): yii\base\Application->run()
+#5 {main}
+2022-03-23 12:44:28 [127.0.0.1][3][9m44ijs49dk8bbbtaj11d219ej][info][application] $_GET = [
+    'type' => 'today'
+    'echarts_type' => 'line-bar'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '03d5f49949b3e7607eef2f3b83b3b446b1abdd5276d06caa73103dd4f388fdeca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"hoSWpmT1R4f0q2Bpd0BtETpMWVAuPAl9\",2592000]\";}'
+    'advanced-backend' => '9m44ijs49dk8bbbtaj11d219ej'
+    '_csrf-backend' => '2bc05c60651150b270802d3766ae0acc2fa572f8625732898ced342a457fa065a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"frZgaPBXWwSdLZQlGshH04woHYuPJZLG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__backend' => 3
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\32479\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ADMIN'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\32479'
+    'http_proxy' => '127.0.0.1:7890'
+    'LOCALAPPDATA' => 'C:\\Users\\32479\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ADMIN'
+    'NUMBER_OF_PROCESSORS' => '20'
+    'OneDrive' => 'C:\\Users\\32479\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\32479\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\app\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\32479\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\SSH Communications Security\\SSH Secure Shell;D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts;C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;C:\\Users\\32479\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\app\\vim'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\app\\phpstudy_pro\\Extensions\\php\\php7.3.4nts\\php.exe'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.3.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 151 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9702'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\32479\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ADMIN'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADMIN'
+    'USERNAME' => '32479'
+    'USERPROFILE' => 'C:\\Users\\32479'
+    'vim' => 'D:\\app\\vim\\gvim.exe'
+    'windir' => 'C:\\Windows'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'HTTP_COOKIE' => '_identity-backend=03d5f49949b3e7607eef2f3b83b3b446b1abdd5276d06caa73103dd4f388fdeca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22hoSWpmT1R4f0q2Bpd0BtETpMWVAuPAl9%22%2C2592000%5D%22%3B%7D; advanced-backend=9m44ijs49dk8bbbtaj11d219ej; _csrf-backend=2bc05c60651150b270802d3766ae0acc2fa572f8625732898ced342a457fa065a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22frZgaPBXWwSdLZQlGshH04woHYuPJZLG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost/backend/main/system'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_CSRF_TOKEN' => 'C_Q07fV4x9C0XGlooK85thXswC6gt5bUaeQocYJR5cdthm6KlCiFiOMrOgzs9WjaUp-oZpCD4bshvV0hyAupgA=='
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '54138'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.15.11'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/work/www/rageframe/web'
+    'DOCUMENT_URI' => '/backend/index.php'
+    'REQUEST_URI' => '/backend/main/member-recharge-stat?type=today&echarts_type=line-bar'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'type=today&echarts_type=line-bar'
+    'PATH_TRANSLATED' => 'D:/work/www/rageframe/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/work/www/rageframe/web/backend/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1648010668.9757
+    'REQUEST_TIME' => 1648010668
+]
