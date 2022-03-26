@@ -114,7 +114,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title];
 
                                 'edits' => function ($url, $model, $key) {
                                         if($model->id != Yii::$app->params['adminAccount']){
-                                            return Html::a('权限分配', ['assignment', 'id' => $model->id], [
+                                            return Html::a('分配角色', ['assignment', 'id' => $model->id], [
                                                     'data-toggle' => 'modal',
                                                     'data-target' => '#ajaxModal',
                                                     'class' => 'blue'
