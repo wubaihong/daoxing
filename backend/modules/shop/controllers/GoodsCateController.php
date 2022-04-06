@@ -1,27 +1,47 @@
 <?php
 
-namespace backend\modules\common\controllers;
+namespace backend\modules\shop\controllers;
 
+
+
+use common\traits\FileActions;
 use Yii;
 use yii\data\ActiveDataProvider;
 use common\traits\Curd;
 use common\models\common\Menu;
 use common\enums\AppEnum;
 use backend\controllers\BaseController;
+use common\models\shop\GoodsCate;
+use common\traits\GoodsCateTrait;
 
 /**
  * Class MenuController
  * @package backend\modules\base\controllers
  * @author jianyan74 <751393839@qq.com>
  */
-class MenuController extends BaseController
+class GoodsCateController extends BaseController
 {
-    use Curd;
+    use GoodsCateTrait;
+
 
     /**
      * @var \yii\db\ActiveRecord
      */
-    public $modelClass = Menu::class;
+    public $modelClass = GoodsCate::class;
+
+    /**
+     * 默认应用
+     *
+     * @var string
+     */
+    public $appId = AppEnum::BACKEND;
+
+    /**
+     * 渲染视图前缀
+     *
+     * @var string
+     */
+    public $viewPrefix = '@backend/modules/shop/views/goods-cate/';
 
     /**
      * Lists all Tree models.
@@ -29,13 +49,10 @@ class MenuController extends BaseController
      */
     public function actionIndex()
     {
-        //dd($this);
-        $cate_id = Yii::$app->request->get('cate_id', Yii::$app->services->menuCate->findFirstId(AppEnum::BACKEND));
 
+       // $cate_id = Yii::$app->request->get('id', Yii::$app->services->goodsCate->findFirstId(AppEnum::BACKEND));
         $query = $this->modelClass::find()
-            ->orderBy('sort asc, id asc')
-            ->filterWhere(['cate_id' => $cate_id])
-            ->andWhere(['app_id' => AppEnum::BACKEND]);
+            ->orderBy('sort asc, id asc');
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
             'pagination' => false
@@ -43,8 +60,7 @@ class MenuController extends BaseController
 
         return $this->render('index', [
             'dataProvider' => $dataProvider,
-            'cates' => Yii::$app->services->menuCate->findDefault(AppEnum::BACKEND),
-            'cate_id' => $cate_id,
+            'cates' => Yii::$app->services->goodsCate->findAll(AppEnum::BACKEND),
         ]);
     }
 
@@ -58,29 +74,24 @@ class MenuController extends BaseController
     {
         $id = Yii::$app->request->get('id', '');
         $model = $this->findModel($id);
+       // dd($model);
         $model->pid = Yii::$app->request->get('pid', null) ?? $model->pid; // 父id
-        $model->cate_id = Yii::$app->request->get('cate_id', null) ?? $model->cate_id; // 分类id
 
         // ajax 校验
         $this->activeFormValidate($model);
+/*        if($request=Yii::$app->request->post()){
+            p($request);
+        }*/
         if ($model->load(Yii::$app->request->post())) {
+           // dd($model);
             return $model->save()
-                ? $this->redirect(['index', 'cate_id' => $model->cate_id])
-                : $this->message($this->getError($model), $this->redirect(['index', 'cate_id' => $model->cate_id]), 'error');
+                ? $this->redirect(['index'])
+                : $this->message($this->getError($model), $this->redirect(['index']), 'error');
         }
-
-        if ($model->isNewRecord && $model->parent) {
-            $model->cate_id = $model->parent->cate_id;
-        }
-
-
-        $menuCate = Yii::$app->services->menuCate->findById($model->cate_id);
-      //  dd($menuCate);
 
         return $this->renderAjax('ajax-edit', [
             'model' => $model,
-            'cates' => Yii::$app->services->menuCate->getDefaultMap(AppEnum::BACKEND),
-            'menuDropDownList' => Yii::$app->services->menu->getDropDown($menuCate, AppEnum::BACKEND, $id),
+            'goodsCatesDropDownList' => Yii::$app->services->goodsCate->getDropDown($id),
         ]);
     }
 
@@ -95,9 +106,9 @@ class MenuController extends BaseController
     public function actionDelete($id)
     {
         if (($model = $this->findModel($id))->delete()) {
-            return $this->message("删除成功", $this->redirect(['index', 'cate_id' => $model->cate_id]));
+            return $this->message("删除成功", $this->redirect(['index']));
         }
 
-        return $this->message("删除失败", $this->redirect(['index', 'cate_id' => $model->cate_id]), 'error');
+        return $this->message("删除失败", $this->redirect(['index']), 'error');
     }
 }

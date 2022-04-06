@@ -152,4 +152,12 @@ class Member extends User
             ]
         ];
     }
+
+    public static function getUserName($id){
+
+      return self::findOne(['id'=>$id]);
+
+    }
+
+
 }

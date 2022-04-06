@@ -119,6 +119,78 @@ class Html extends BaseHtml
     }
 
     /**
+     * 状态标签
+     *
+     * @param int $status
+     * @return mixed
+     */
+    public static function topping($topping = 1, $options = [])
+    {
+        if (!self::beforVerify('ajax-update')) {
+            return '';
+        }
+
+        $listBut = [
+            StatusEnum::DISABLED => self::tag('span', '置顶', array_merge(
+                [
+                    'class' => "btn btn-success btn-sm",
+                    'data-toggle' => 'tooltip',
+                    'data-original-title' => '点击置顶',
+                    'onclick' => "rfTopping(this)"
+                ],
+                $options
+            )),
+            StatusEnum::ENABLED => self::tag('span', '取置', array_merge(
+                [
+                    'class' => "btn btn-default btn-sm",
+                    'data-toggle' => 'tooltip',
+                    'data-original-title' => '点击取置',
+                    'onclick' => "rfTopping(this)"
+                ],
+                $options
+            )),
+        ];
+
+        return $listBut[$topping] ?? '';
+    }
+
+    /**
+     * 状态标签
+     *
+     * @param int $status
+     * @return mixed
+     */
+    public static function audit($audit = 1, $options = [])
+    {
+        if (!self::beforVerify('ajax-update')) {
+            return '';
+        }
+
+        $listBut = [
+            StatusEnum::DISABLED => self::tag('span', '未审校', array_merge(
+                [
+                    'class' => "btn btn-success btn-sm",
+                    'data-toggle' => 'tooltip',
+                    'data-original-title' => '点击审核',
+                    'onclick' => "rfAudit(this)"
+                ],
+                $options
+            )),
+            StatusEnum::ENABLED => self::tag('span', '已审核', array_merge(
+                [
+                    'class' => "btn btn-default btn-sm",
+                    'data-toggle' => 'tooltip',
+                    'data-original-title' => '点击取审',
+                    'onclick' => "rfAudit(this)"
+                ],
+                $options
+            )),
+        ];
+
+        return $listBut[$audit] ?? '';
+    }
+
+    /**
      * @param string $text
      * @param null $url
      * @param array $options

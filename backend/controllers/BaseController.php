@@ -2,6 +2,7 @@
 
 namespace backend\controllers;
 
+use common\traits\FileActions;
 use Yii;
 use yii\web\Controller;
 use yii\filters\AccessControl;
@@ -18,7 +19,6 @@ use common\behaviors\ActionLogBehavior;
 class BaseController extends Controller
 {
     use BaseAction;
-
     /**
      * @return array
      */
@@ -52,6 +52,7 @@ class BaseController extends Controller
         if (!parent::beforeAction($action)) {
             return false;
         }
+        //dd($action);
 
         // 每页数量
         $this->pageSize = Yii::$app->request->get('per-page', 10);

@@ -184,6 +184,7 @@ class StringHelper extends BaseStringHelper
         return $value;
     }
 
+
     /**
      * 返回字符串在另一个字符串中第一次出现的位置
      *

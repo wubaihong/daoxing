@@ -68,6 +68,10 @@ use common\components\Service;
  * @property \services\oauth2\AccessTokenService $oauth2AccessToken oauth2授权token
  * @property \services\oauth2\RefreshTokenService $oauth2RefreshToken oauth2刷新token
  * @property \services\oauth2\AuthorizationCodeService $oauth2AuthorizationCode oauth临时code
+ * @property \services\shop\GoodsCatesService $goodsCate goodsCate 商品分类
+ * @property \services\article\ArticleService $article article 文章
+ * @property \services\article\CircleService $circle circle 圈子
+ * @property \services\article\SubjectService $subject subject 圈子
  *
  * @author jianyan74 <751393839@qq.com>
  */
@@ -103,6 +107,14 @@ class Application extends Service
         'merchantCate' => 'services\merchant\CateService',
         'merchantMember' => 'services\merchant\MemberService',
         'merchantMemberAuth' => 'services\merchant\MemberAuthService',
+        /**------商城--------------**/
+        'goodsCate'=>'services\shop\GoodsCateService',
+
+        /**------文章--------------**/
+        'article'=>'services\article\ArticleService',
+        'circle'=>'services\article\CircleService',
+        'subject'=>'services\article\SubjectService',
+
         /** ------ api ------ **/
         'apiAccessToken' => [
             'class' => 'services\api\AccessTokenService',

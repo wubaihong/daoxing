@@ -182,6 +182,95 @@ $this->registerJs($script);
         });
     }
 
+    //置顶状态 topping 1:置顶;0取置;
+    function rfTopping(obj) {
+        let id = $(obj).attr('data-id');
+        let topping = 0;
+        self = $(obj);
+        if (self.hasClass("btn-success")) {
+            topping= 1;
+        }
+
+        if (!id) {
+            id = $(obj).parent().parent().attr('id');
+        }
+
+        if (!id) {
+            id = $(obj).parent().parent().attr('data-key');
+        }
+
+        $.ajax({
+            type: "get",
+            url: "<?= Url::to(['ajax-update'])?>",
+            dataType: "json",
+            data: {
+                id: id,
+                topping: topping
+            },
+            success: function (data) {
+                if (parseInt(data.code) === 200) {
+                    if (self.hasClass("btn-success")) {
+                        self.removeClass("btn-success").addClass("btn-default");
+                        self.attr("data-toggle", 'tooltip');
+                        self.attr("data-original-title", '点击取置');
+                        self.text('取置');
+                    } else {
+                        self.removeClass("btn-default").addClass("btn-success");
+                        self.attr("data-toggle", 'tooltip');
+                        self.attr("data-original-title", '点击置顶');
+                        self.text('置顶');
+                    }
+                } else {
+                    rfAffirm(data.message);
+                }
+            }
+        });
+    }
+    //审核状态 topping 1:置顶;0取置;
+    function rfAudit(obj) {
+        let id = $(obj).attr('data-id');
+        let audit = 0;
+        self = $(obj);
+        if (self.hasClass("btn-success")) {
+            audit= 1;
+        }
+
+        if (!id) {
+            id = $(obj).parent().parent().attr('id');
+        }
+
+        if (!id) {
+            id = $(obj).parent().parent().attr('data-key');
+        }
+
+        $.ajax({
+            type: "get",
+            url: "<?= Url::to(['ajax-update'])?>",
+            dataType: "json",
+            data: {
+                id: id,
+                audit: audit
+            },
+            success: function (data) {
+                if (parseInt(data.code) === 200) {
+                    if (self.hasClass("btn-success")) {
+                        self.removeClass("btn-success").addClass("btn-default");
+                        self.attr("data-toggle", 'tooltip');
+                        self.attr("data-original-title", '点击取审');
+                        self.text('取审');
+                    } else {
+                        self.removeClass("btn-default").addClass("btn-success");
+                        self.attr("data-toggle", 'tooltip');
+                        self.attr("data-original-title", '点击审核');
+                        self.text('审核');
+                    }
+                } else {
+                    rfAffirm(data.message);
+                }
+            }
+        });
+    }
+
     // 排序
     function rfSort(obj) {
         let id = $(obj).attr('data-id');

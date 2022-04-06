@@ -1,6 +1,6 @@
 <?php
 
-namespace backend\modules\common\controllers;
+namespace backend\modules\shop\controllers;
 
 use Yii;
 use yii\data\ActiveDataProvider;
@@ -14,14 +14,14 @@ use backend\controllers\BaseController;
  * @package backend\modules\base\controllers
  * @author jianyan74 <751393839@qq.com>
  */
-class MenuController extends BaseController
+class GoodsController extends BaseController
 {
     use Curd;
 
     /**
      * @var \yii\db\ActiveRecord
      */
-    public $modelClass = Menu::class;
+    public $modelClass = Goods::class;
 
     /**
      * Lists all Tree models.
@@ -73,9 +73,7 @@ class MenuController extends BaseController
             $model->cate_id = $model->parent->cate_id;
         }
 
-
         $menuCate = Yii::$app->services->menuCate->findById($model->cate_id);
-      //  dd($menuCate);
 
         return $this->renderAjax('ajax-edit', [
             'model' => $model,

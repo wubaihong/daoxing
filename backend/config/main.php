@@ -29,6 +29,14 @@ return [
         'oauth2' => [
             'class' => 'backend\modules\oauth2\Module',
         ],
+        /** ------ shop ------ **/
+        'shop' => [
+            'class' => 'backend\modules\shop\Module',
+        ],
+        /** ------ article ------ **/
+        'article' => [
+            'class' => 'backend\modules\article\Module',
+        ],
     ],
     'components' => [
         'request' => [
